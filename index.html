@@ -15,7 +15,7 @@
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.svg" rel="icon">
+  <link href="assets/img/azizdeen.jpeg" rel="icon">
 
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -76,7 +76,7 @@
           <ul>
             <li class='active'><a href='#'>Acceuil</a></li>
             <li><a href='#about'>A propos</a></li>
-            <li><a href='#portfolio'>Produits</a></li>
+            <li><a href='#product'>Produits</a></li>
             <li><a href='#contact'>Contact</a></li>
             <li><a href='#about'>Commencer</a></li>
           </ul>
@@ -196,6 +196,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Portfolio Section ======= -->
+    <div id="product"></div>
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
@@ -580,7 +581,7 @@
                         <li id="idmydatail2"></li>
                         <li id="idmydatail3"></li>
                         <li id="idmydatail4"></a></li>
-                        <li id="idmydatail6" class="myClasidpayer"></li>
+                        <li id="idmydatail6" class="myClasidpayerx"></li>
                       </ul>
                     </div>
                     <div class="portfolio-description">
@@ -611,10 +612,10 @@
     <div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <!-- Toogle to second dialog -->
+          <!-- Toogle to second dialog
           <button class="btn btn-danger myClasidpayer" data-bs-dismiss="modal" id="idpayer"><i
               class="bi bi-credit-card-fill"></i>
-            Payer</button><br>
+            Payer</button><br> -->
           <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-dismiss="modal"
             id="iddetails"><i class="bi bi-eye-fill"></i> Details</button>
         </div>
@@ -695,11 +696,11 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>BeCare</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>AZIZDEEN</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
 
-        Designed by <a href="#" style="color: white;">BeCare</a>
+        Designed by <a href="#" style="color: white;">AZIZDEEN</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -928,7 +929,7 @@
             Idmydatail4.innerHTML = `<p><strong>Prix Promo</strong>: ${snapshot.val().PrixPromo} FCFA</p>`
             Idmydatail5.innerHTML = `<p>${snapshot.val().Genboxtextarea}</p>`
             Idmydatailimg.innerHTML = `<img src="${snapshot.val().RollNo}" class="img-fluid" alt="image" style="height: 72vh; width: 100%; position: relative; z-index: 1;">`
-            Idmydatail6.innerHTML = `<button class="btn btn-danger"><i class="bi bi-credit-card-fill"></i>  Payer</button>`
+            Idmydatail6.innerHTML = `<button class="btn btn-danger"><a href="https://wa.me/+22997329399?text=Salut AZIZDEEN,%20comment%20allez-vous%20?%20Vous%20êtes%20une une entreprise dans le commerce général%20et%20je%20suis%20vraiment%20intéressé%20par%20vos%20produits. J'aimerais en savoir plus sur vous." class="twitter" style="color: white !important;"><i class="bx bxl-whatsapp" ></i> Contactez-nous</a></button>`
 
           } else {
             alert("no data");
